@@ -1,5 +1,5 @@
 <?php
-class  Arma {
+abstract class Arma {
     protected string $nombre;
     protected int $potencia;
 
