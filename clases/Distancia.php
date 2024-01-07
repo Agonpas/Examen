@@ -9,6 +9,9 @@ class Distancia extends Arma {
         $this->municion = $municion;
         $this->alcance = $alcance;
     }
+    public function __toString() {
+        return parent::__toString() . PHP_EOL . "Munición: $this->municion" . PHP_EOL . "Alcance: $this->alcance" . PHP_EOL;
+    }
     /*getters*/
     public function setMunicion(int $municion) {
         $this->municion = $municion;

@@ -7,6 +7,9 @@ abstract class Arma {
         $this->nombre = $nombre;
         $this->potencia = $potencia; 
     }
+    public function __toString(){
+        return "Nombre: $this->nombre" . PHP_EOL . "Potencia: $this->potencia";
+    }
     /*setters*/
     public function setNombre(string $nombre){
         $this->nombre = $nombre;
